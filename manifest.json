@@ -1,0 +1,20 @@
+{
+  "name": "puicopy - Copy to clipboard via infotext",
+  "description": "AIイラスト・AIフォト・AIグラビア専用の投稿サイトである『chichi-pui（ちちぷい）』で公開されている呪文・プロンプトを、infotext形式でクリップボードにコピーすることができる機能を提供するChrome拡張機能です。",
+  "version": "0.0.1",
+  "manifest_version": 3,
+  "content_scripts": [
+    {
+      "matches": [
+        "https://www.chichi-pui.com/posts/*"
+      ],
+      "exclude_matches": [
+        "https://www.chichi-pui.com/posts/upload/"
+      ],
+      "js": ["src/content-script.ts"],
+      "run_at": "document_end",
+      "all_frames": true
+    }
+  ],
+  "permissions": ["activeTab"]
+}

@@ -25,8 +25,8 @@ button.addEventListener("click", () => {
   const promptFields = document.querySelectorAll(
     ".image-posts-detail__prompt-body",
   );
-  const prompt = promptFields[0]?.textContent;
-  const negativePrompt = promptFields[1]?.textContent;
+  const prompt = promptFields[0]?.textContent?.trim() || "";
+  const negativePrompt = promptFields[1]?.textContent?.trim() || "";
 
   const parameters = document.querySelectorAll(
     ".image-posts-detail__prompt-parameter-value",
@@ -38,14 +38,14 @@ button.addEventListener("click", () => {
   const strength = parameters[4]?.textContent;
   const noise = parameters[5]?.textContent;
 
-  let copyText = prompt?.trim() || "";
+  let copyText = prompt || "";
 
-  if (negativePrompt) {
+  if (negativePrompt && negativePrompt !== "入力なし") {
     if (copyText) {
       copyText += "\n";
     }
 
-    copyText += "Negative prompt: " + negativePrompt?.trim();
+    copyText += "Negative prompt: " + negativePrompt;
   }
 
   if (copyText && (steps || scale || seed || sampler || strength || noise)) {

@@ -2,9 +2,9 @@
 
 ![logo image](./logo/logo.png)
 
-※現在公開準備中です。公開完了次第、URLをこちらにも貼ります。
-
 AIイラスト・AIフォト・AIグラビア専用の投稿サイトである[『chichi-pui（ちちぷい）』](https://www.chichi-pui.com/)で公開されている呪文・プロンプトを、infotext形式でクリップボードにコピーすることができる機能を提供するChrome拡張機能です。
+
+[Chrome拡張機能はこちらからダウンロードできます。](https://chrome.google.com/webstore/detail/puicopy-copy-to-clipboard/jncfknbdioaeiklmhgcoppljffappgkk)
 
 ## Usage
 Chrome拡張機能を有効にした状態、かつchichi-pui（ちちぷい）にログインした状態で、ちちぷいの投稿画像の閲覧画面にアクセスすると、`生成情報をコピー`ボタンが追加されます。  

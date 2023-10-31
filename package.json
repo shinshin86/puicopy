@@ -8,9 +8,10 @@
   "license": "MIT",
   "scripts": {
     "dev": "vite",
-    "build": "tsc && vite build",
+    "build": "npm run clean && tsc && vite build",
     "preview": "vite preview",
-    "fmt": "deno fmt"
+    "fmt": "deno fmt",
+    "clean": "rm -rf ./dist"
   },
   "devDependencies": {
     "@crxjs/vite-plugin": "^1.0.14",

@@ -69,11 +69,11 @@ button.addEventListener("click", () => {
   }
 
   if (strength) {
-    // TODO
+    copyText += "Strength: " + strength + ", ";
   }
 
   if (noise) {
-    // TODO
+    copyText += "Noise: " + noise + ", ";
   }
 
   navigator.clipboard.writeText(copyText).then(() => {
